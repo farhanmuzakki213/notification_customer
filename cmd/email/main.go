@@ -23,7 +23,7 @@ func main() {
 	}
 	defer rmqConn.Close()
 
-	serviceName := "EMAIl"
+	serviceName := "EMAIL"
 
 	log.Printf("[%s] Listening for messages...", serviceName)
 	repo := repository.NewRabbitMQRepository(rmqConn, cfg.ExchangeName)
